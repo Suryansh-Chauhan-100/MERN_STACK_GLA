@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chess Board</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: #f3f4f6;
+    }
+
+    .wrapper { 
+      text-align: center; 
+    }
+
+    h1 {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    /* The board */
+    .board {
+      width: 360px;
+      height: 360px;
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+      grid-template-rows: repeat(8, 1fr);
+      border: 8px solid #222;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+      background: #eee;
+    }
+
+    .square {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;       /* include border in size */
+      border: 1px solid #333;       /* visible grid lines */
+      background: #f0d9b5;          /* light by default */
+    }
+
+    /* Correct checker pattern using 16n groups (pairs of rows) */
+    /* Dark squares on rows 1,3,5,7 -> columns 2,4,6,8  */
+    .square:nth-child(16n + 2),
+    .square:nth-child(16n + 4),
+    .square:nth-child(16n + 6),
+    .square:nth-child(16n + 8),
+    /* Dark squares on rows 2,4,6,8 -> columns 1,3,5,7 */
+    .square:nth-child(16n + 9),
+    .square:nth-child(16n + 11),
+    .square:nth-child(16n + 13),
+    .square:nth-child(16n + 15) {
+      background: #b58863;
+    }
+
+  </style>
+
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Chess Board</h1>
+
+    <div class="board">
+      <!-- 64 squares -->
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+      <div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div><div class="square"></div>
+    </div>
+
+  </div>
+</body>
+</html>

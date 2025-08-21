@@ -1,0 +1,24 @@
+/* External CSS */
+
+*{
+    margin: 0;
+    padding: 20px;
+}
+
+
+h1{
+    color: red;
+    background-color:yellow;
+}
+
+/* id selctor */
+#first{
+    color: white;
+    background-color: brown;
+}
+
+/* class selector */
+.second{
+    color: yellow;
+    background-color: green;
+}

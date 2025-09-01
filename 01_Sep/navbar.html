@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar container */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a40;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    /* Logo */
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 12px;
+      font-weight: normal;
+      color: #ddd;
+    }
+
+    /* Menu */
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+
+    .menu a:hover,
+    .menu a.active {
+      background-color: #f4c542;
+      color: black;
+    }
+
+    /* Search bar */
+    .search-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .search-container input {
+      padding: 6px 10px;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .search-container button {
+      padding: 6px 10px;
+      border: none;
+      background-color: #f4c542;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <!-- Left Logo -->
+    <div class="logo">
+      PAPERMAG <span>MAGAZINE</span>
+    </div>
+
+    <!-- Middle Menu -->
+    <div class="menu">
+      <a href="#" class="active">Home</a>
+      <a href="#">Page</a>
+      <a href="#">Catalog</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <!-- Right Search -->
+    <div class="search-container">
+      <input type="text" placeholder="Search">
+      <button>🔍</button>
+    </div>
+
+  </div>
+</body>
+</html>

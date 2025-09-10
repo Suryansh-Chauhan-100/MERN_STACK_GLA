@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions and animations</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 100px;
+        background: chocolate;
+        transition-property: width, height;
+        transition-duration: 3s;
+        transition-delay: 5s;
+    }
+
+    .box:hover{
+        height: 300px;
+        width: 400px;
+    }
+</style>
+<body>
+    <h1>The transition-delay property</h1>
+
+    <p>Hover over the div element below, to see the transition effect(Note that the transition effect will wait 5 seconds before strating):</p>
+
+    <div class="box">Namaste Vadakkam</div>
+</body>
+</html>

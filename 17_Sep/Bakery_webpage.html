@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Crust Bakery</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-50 text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow-md fixed w-full top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-amber-700">Golden Crust</h1>
+      <nav class="space-x-4 hidden md:flex">
+        <a href="#home" class="hover:text-amber-600">Home</a>
+        <a href="#products" class="hover:text-amber-600">Products</a>
+        <a href="#about" class="hover:text-amber-600">About</a>
+        <a href="#contact" class="hover:text-amber-600">Contact</a>
+      </nav>
+      <button class="md:hidden p-2 rounded text-amber-700 focus:outline-none">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 bg-gradient-to-r from-amber-100 to-amber-200 text-center">
+    <div class="max-w-2xl mx-auto py-16 px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-amber-800">Baked Fresh Everyday</h2>
+      <p class="text-lg text-gray-700 mb-6">
+        Delicious cakes, pastries, breads & cookies made with love.
+      </p>
+      <a href="#products" class="bg-amber-700 text-white px-6 py-3 rounded-full shadow-md hover:bg-amber-800 transition">
+        Shop Now
+      </a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-16 px-4 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-amber-800 mb-10">Our Best Sellers</h3>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      
+      <!-- Product Card -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwvHaIOV0b1awoY71O0a9KzCgrduE2VxfNEQ&s" alt="Cake" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Chocolate Cake</h4>
+          <p class="text-sm text-gray-500">Rich & moist chocolate delight.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹499</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://img.freepik.com/free-photo/set-various-bread-stone-surface_114579-40612.jpg" alt="Bread" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Fresh Bread</h4>
+          <p class="text-sm text-gray-500">Soft, fluffy & oven fresh.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹99</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://mithiyaj.com/kurla/wp-content/uploads/sites/2/2025/01/1259963494" alt="Pastry" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Strawberry Pastry</h4>
+          <p class="text-sm text-gray-500">Sweet & fruity layered pastry.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹149</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://t3.ftcdn.net/jpg/16/54/54/36/360_F_1654543652_XMRXHDmY6R4H2FN4hqOXrtdZCbytPDEf.jpg" alt="Donut" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Glazed Donuts</h4>
+          <p class="text-sm text-gray-500">Perfectly sweet & fluffy.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹199</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Products -->
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://natashaskitchen.com/wp-content/uploads/2020/05/Vanilla-Cupcakes-3.jpg" alt="Cupcake" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Vanilla Cupcake</h4>
+          <p class="text-sm text-gray-500">Soft & creamy vanilla frosting.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹79</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwHrYJreTaDxXjvrWWZ44wRombbnNiLgTKrg&s" alt="Cookies" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Choco Chip Cookies</h4>
+          <p class="text-sm text-gray-500">Crispy outside, gooey inside.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹129</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://media.istockphoto.com/id/450752471/photo/homemade-organic-apple-pie-dessert.jpg?s=612x612&w=0&k=20&c=6mwKTunGfRKFWyB_VUOGqXzcUMtBSCvg6JAQ3At2aWE=" alt="Pie" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Apple Pie</h4>
+          <p class="text-sm text-gray-500">Classic buttery crust & apples.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹249</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:scale-105 transition">
+        <img src="https://media.istockphoto.com/id/168731372/photo/fresh-homemade-chocolate-brownie.jpg?s=612x612&w=0&k=20&c=DOWddwc5EBO7gedFIL7SC5absmtACBOefRRc8YLyh-w=" alt="Brownie" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h4 class="font-semibold text-lg">Fudge Brownie</h4>
+          <p class="text-sm text-gray-500">Decadent chocolate brownie.</p>
+          <div class="flex justify-between items-center mt-3">
+            <span class="font-bold text-amber-700">₹179</span>
+            <button class="bg-amber-700 text-white px-3 py-1 rounded hover:bg-amber-800">Add</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-amber-100 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-amber-800 mb-4">About Us</h3>
+    <p class="max-w-2xl mx-auto text-gray-700">
+      Golden Crust Bakery is all about fresh, homemade goodness. From cakes to breads, 
+      we bake daily with the finest ingredients to bring you a taste of happiness.
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold text-amber-800 mb-4">Get in Touch</h3>
+    <p class="mb-6 text-gray-600">Order online or visit us at our cozy bakery store.</p>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500" />
+      <input type="email" placeholder="Your Email" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500" />
+      <textarea placeholder="Your Message" rows="4" class="w-full p-3 border rounded focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+      <button class="bg-amber-700 text-white px-6 py-3 rounded-full hover:bg-amber-800">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-800 text-white py-6 text-center">
+    <p>&copy; 2025 Golden Crust Bakery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
